@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Project Name - описание">
+  <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+  <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+  <!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+  <!-- используйте только для шрифта находящегося на первом экране -->
+  <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d7f796e6-b982-4f3a-9dae-e214d0513617&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ProjectName — Оплата и доставка</title>
+</head>
+
+<body class="bg-anti-white">
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+      </symbol>
+    </svg>
+  </div>
+  <div class="wrapper">
+    <header class="header ">
+      <div class="container">
+        <div class="header__wrapper">
+          <span class="header__logo">
+            <img src="./img/svg/logo.svg" alt="">
+          </span>
+          <div class="header__wrap">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="">О компании</a></li>
+                <li class="header__nav-item"><a href="">Продукция</a></li>
+                <li class="header__nav-item"><a href="">Галерея</a></li>
+                <li class="header__nav-item"><a href="">Документы</a></li>
+                <li class="header__nav-item"><a href="">Оплата и доставка</a></li>
+                <li class="header__nav-item"><a href="">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__wrap">
+            <a href="mailto:info@vibor-transit.ru" class="header__link"><img src="./img/svg/mail.svg" alt="">info@vibor-transit.ru</a>
+            <a href="tel:+7 928 258-05-08" class="header__link"><img src="./img/svg/phone.svg" alt="">+7 928 258-05-08</a>
+            <a href="#" class="header__btn page-btn">Обратный звонок</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs-wrapper">
+        <div class="container">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__wrapper">
+              <a href="#" class="breadcrumbs__link">Главная</a>
+              <span class="breadcrumbs__link">Оплата и Доставка</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="payment">
+        <div class="container">
+          <h2 class="page-h2">Оплата и Доставка</h2>
+          <div class="payment__wrapper bg-anti-white">
+            <div>
+              <h4 class="page-text-24 page-text-500 payment__wrapper-title">Условия оплаты</h4>
+              <p class="page-text-24 payment__wrapper-desc">После выбора продукции и необходимого объема, менеджер обсудит с вами варианты
+                доставки и
+                подготовит счет для оплаты.</p>
+              <ul class="payment__wrapper-list">
+                <li class="payment__wrapper-item">
+                  <img src="img/svg/handshake.svg" alt="">
+                  <p class="page-text-18">Мы работаем по 100% предоплате.</p>
+                </li>
+                <li class="payment__wrapper-item">
+                  <img src="img/svg/telephone.svg" alt="">
+                  <p class="page-text-18">Безналичный расчет (с НДС)</p>
+                </li>
+                <li class="payment__wrapper-item">
+                  <img src="img/svg/truck.svg" alt="">
+                  <p class="page-text-18">Отгрузка возможна сразу после поступления оплаты на наш счет.</p>
+                </li>
+                <li class="payment__wrapper-item">
+                  <img src="img/svg/paper.svg" alt="">
+                  <p class="page-text-18">Возможны скидки в зависимости от объема по согласованию с менеджером.</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="page-text-24 page-text-500 payment__wrapper-title">Условия оплаты</h4>
+              <p class="page-text-24 payment__wrapper-desc">После выбора продукции и необходимого объема, менеджер обсудит с вами варианты
+                доставки и
+                подготовит счет для оплаты.</p>
+              <ul class="payment__wrapper-list">
+                <li class="payment__wrapper-item">
+                  <img src="img/svg/fast-truck.svg" alt="">
+                  <p class="page-text-18">Отгрузку осуществляем самостоятельно (авто грузоподъемностью до 20 тонн) или
+                    в
+                    транспорт Заказчика.</p>
+                </li>
+                <li class="payment__wrapper-item">
+                  <img src="img/svg/calculator.svg" alt="">
+                  <p class="page-text-18">Стоимость доставки рассчитывается индивидуально и зависит от заказанного
+                    объема и
+                    расстояния до объекта. Для точного
+                    расчета свяжитесь с нашими логистами.</p>
+                </li>
+                <li class="payment__wrapper-item">
+                  <img src="img/svg/spin.svg" alt="">
+                  <p class="page-text-18">Отгрузка осуществляется в любое удобное вам время в любой день недели 24/7.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="questions">
+      <div class="container">
+        <div class="questions__wrapper">
+          <h2 class="questions__header page-h2">Остались вопросы?</h2>
+          <div class="questions__wrap">
+            <div class="questions__left">
+              <p class="questions__text page-text-24">
+                Мы с радостью вам поможем!<br>
+                Оставьте заявку и наш менеджер свяжется с вами в ближайшее время.
+                <br><br>
+                Вы тык же можете воспользоваться обратным звонком.
+              </p>
+              <a href="" class="questions__button page-btn"><img src="../img/svg/phone.svg" alt=""> Обратный звонок</a>
+            </div>
+            <div class="questions__right">
+              <form action="" class="questions__form">
+                <div class="questions__fields">
+                  <label for="" class="questions__label">
+                    <span class="questions__field-text page-text-18">Ваше имя:</span>
+                    <input type="text" class="questions__field">
+                  </label>
+                  <label for="" class="questions__label">
+                    <span class="questions__field-text page-text-18">Город:</span>
+                    <input type="text" class="questions__field">
+                  </label>
+                  <label for="" class="questions__label">
+                    <span class="questions__field-text page-text-18">Контактный номер:</span>
+                    <input type="text" class="questions__field">
+                  </label>
+                  <label for="" class="questions__label">
+                    <span class="questions__field-text page-text-18">Email:</span>
+                    <input type="text" class="questions__field">
+                  </label>
+                </div>
+                <div class="questions__btns">
+                  <button class="questions__submit page-btn-black">Отправить</button>
+                  <span class="questions__terms page-text-18">Нажимая кнопку, я даю согласие на обработку <a href="">персональных данных</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a href="" class="footer__logo"><img src="../img/svg/logo-white.svg" alt=""></a>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="" class="page-text-18">О компании</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Продукция</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Галерея</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Документы</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Оплата и доставка</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="footer__wrap">
+            <a href="" class="footer__phone page-text-18"><img src="../img/svg/phone-white.svg" alt="">+7 928 258-05-08</a>
+            <a href="" class="footer__btn page-btn">Обратный звонок</a>
+          </div>
+          <div class="footer__wrap">
+            <a href="" class="footer__link page-text-18"><img src="../img/svg/mail-white.svg" alt="">info@vibor-transit.ru</a>
+            <a href="" class="footer__link page-text-18"><img src="../img/svg/pin.svg" alt="">г. Курганинск, Кошехабльское ш., 15</a>
+            <div class="footer__socials">
+              <a href="" class="footer__social"><img src="#" alt=""></a>
+              <a href="" class="footer__social"><img src="#" alt=""></a>
+              <a href="" class="footer__social"><img src="#" alt=""></a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <span class="footer__text page-text-18">© 1996 — 2023 Карьер Курганинский — Карьер по добыче инертных материалов компании Выбор.</span>
+            <div class="footer__bottom-wrap">
+              <span class="footer__text page-text-18">Представленная информация не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ и носит информационный характер. Изображения товаров могут отличаться от оригинала производимой продукции по цвету в связи с особенностью производственного процесса.</span>
+              <span class="footer__text page-text-18">Политика конфиденциальности</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal--preload    " data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload   modal--fit-content   modal--no-scale   modal--some-mod " data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.2" cx="68" cy="68" r="68" fill="url(#paint0_linear_31_694)"/>
+<path d="M59 16L53 12L47 16L41 12L35 16L27 12V92C27 96.4 30.6 100 35 100H67V12L59 16Z" fill="white"/>
+<path d="M51 30C46.6 30 43 33.6 43 38V92C43 96.4 39.4 100 35 100H59V30H51Z" fill="white"/>
+<path d="M61 60V38C61 33.6 57.4 30 53 30H93C97.4 30 101 33.6 101 38V60H61Z" fill="white"/>
+<path d="M67 24V12L59 16L53 12L47 16L41 12L35 16L27 12V92C27 96.4 30.6 100 35 100" fill="white"/>
+<path d="M67 24V12L59 16L53 12L47 16L41 12L35 16L27 12V92C27 96.4 30.6 100 35 100" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M35 100C39.4 100 43 96.4 43 92V38C43 33.6 46.6 30 51 30H53" fill="white"/>
+<path d="M35 100C39.4 100 43 96.4 43 92V38C43 33.6 46.6 30 51 30H53" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M53 120V58C53 55.8 54.8 54 57 54H105C107.2 54 109 55.8 109 58V120C109 122.2 107.2 124 105 124H57C54.8 124 53 122.2 53 120Z" fill="white" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M97 70H65V82H97V70Z" fill="white" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M63 90H71" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M77 90H85" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M91 90H99" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M63 98H71" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M77 98H85" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M91 98H99" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M91 106H99" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M85 106H77" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M71 106H63" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M61 60V38C61 33.6 57.4 30 53 30H93C97.4 30 101 33.6 101 38V60H61Z" fill="white" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M35 100H49" stroke="#007DB6" stroke-width="2.5" stroke-miterlimit="10"/>
+<defs>
+<linearGradient id="paint0_linear_31_694" x1="68" y1="0" x2="68" y2="136" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007DB6"/>
+<stop offset="1" stop-color="#007DB6" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

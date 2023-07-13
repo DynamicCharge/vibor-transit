@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Project Name - описание">
+  <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+  <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+  <!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+  <!-- используйте только для шрифта находящегося на первом экране -->
+  <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d7f796e6-b982-4f3a-9dae-e214d0513617&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ProjectName — Главная</title>
+</head>
+
+<body>
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+      </symbol>
+    </svg>
+  </div>
+  <div class="wrapper">
+    <header class="header ">
+      <div class="container">
+        <div class="header__wrapper">
+          <span class="header__logo">
+            <img src="./img/svg/logo.svg" alt="">
+          </span>
+          <div class="header__wrap">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="">О компании</a></li>
+                <li class="header__nav-item"><a href="">Продукция</a></li>
+                <li class="header__nav-item"><a href="">Галерея</a></li>
+                <li class="header__nav-item"><a href="">Документы</a></li>
+                <li class="header__nav-item"><a href="">Оплата и доставка</a></li>
+                <li class="header__nav-item"><a href="">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__wrap">
+            <a href="mailto:info@vibor-transit.ru" class="header__link"><img src="./img/svg/mail.svg" alt="">info@vibor-transit.ru</a>
+            <a href="tel:+7 928 258-05-08" class="header__link"><img src="./img/svg/phone.svg" alt="">+7 928 258-05-08</a>
+            <a href="#" class="header__btn page-btn">Обратный звонок</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="title">
+        <div class="container">
+          <div class="title__wrapper">
+            <!-- <video src="" class="title__video" src=""></video> -->
+            <img src="./img/content/title.jpg" alt="" class="title__video">
+            <h1 class="title__header">Карьер Курганинский</h1>
+            <a href="" class="title__link"><img src="./img/svg/arrow-bottom.svg" alt=""></a>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__wrapper" data-tabs="parent">
+            <div class="about__headline">
+              <h2 class="about__header page-h2">О компании</h2>
+              <div class="about__tabs-wrapper" data-tabs="controls">
+                <div class="about__tab is-active" data-tabs="control"><span>Преимущества</span></div>
+                <div class="about__tab" data-tabs="control"><span>Награды</span></div>
+              </div>
+            </div>
+            <div class="about__wrap" data-tabs="content">
+              <div class="about__content" data-tabs="element">
+                <div class="about__content-left">
+                  <span class="about__content-span page-text-24">Компания «Выбор» работает на прогресс и делает максимум для развития технологий и разработки инновационных методов производства.</span>
+                  <a href="" class="about__content-link page-btn">Узнать больше</a>
+                </div>
+                <div class="about__content-right">
+                  <ul class="about__content-list">
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-1.png" alt="">
+                      <p class="about__content-text page-text-18">Высокое качество выпускаемой продукции благодаря контролю собственной лаборатории.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-2.png" alt="">
+                      <p class="about__content-text page-text-18">Оборудование от лучших производителей мирового уровня.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-3.png" alt="">
+                      <p class="about__content-text page-text-18">Высокая экологичность производства - добываемое сырье доставляется с карьера до заводов по цепи конвейеров.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-4.png" alt="">
+                      <p class="about__content-text page-text-18">Собственные подъездные ж\д пути с маневровым тепловозом обеспечивающим отгрузку до 100 вагонов в сутки.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-5.png" alt="">
+                      <p class="about__content-text page-text-18">Широкий ассортимент выпускаемой продукции.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-6.png" alt="">
+                      <p class="about__content-text page-text-18">Автомобильный весовой терминал с 2-мя автовесовыми производительностью до 180 автоприцепов в сутки.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="about__content" data-tabs="element">
+                <div class="about__content-left">
+                  <span class="about__content-span page-text-24">Компания «Выбор» работает на прогресс и делает максимум для развития технологий и разработки инновационных методов производства.</span>
+                  <a href="" class="about__content-link page-btn">Узнать больше</a>
+                </div>
+                <div class="about__content-right">
+                  <ul class="about__content-list">
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-1.png" alt="">
+                      <p class="about__content-text page-text-18">2 Высокое качество выпускаемой продукции благодаря контролю собственной лаборатории.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-2.png" alt="">
+                      <p class="about__content-text page-text-18">Оборудование от лучших производителей мирового уровня.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-3.png" alt="">
+                      <p class="about__content-text page-text-18">Высокая экологичность производства - добываемое сырье доставляется с карьера до заводов по цепи конвейеров.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-4.png" alt="">
+                      <p class="about__content-text page-text-18">Собственные подъездные ж\д пути с маневровым тепловозом обеспечивающим отгрузку до 100 вагонов в сутки.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-5.png" alt="">
+                      <p class="about__content-text page-text-18">Широкий ассортимент выпускаемой продукции.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/content/adv-6.png" alt="">
+                      <p class="about__content-text page-text-18">Автомобильный весовой терминал с 2-мя автовесовыми производительностью до 180 автоприцепов в сутки.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mini-banner">
+        <div class="container">
+          <div class="mini-banner__wrapper">
+            <img src="./img/content/mini-banner.jpg" alt="">
+            <!-- <p class="mini-banner__text">Собственная аккредитованная лаборатория позволяет выпускать продукцию, отвечающую всем требованиям и соответствующую стандартам РФ.</p> -->
+          </div>
+        </div>
+      </section>
+      <section class="productions">
+        <div class="container">
+          <div class="productions__wrapper">
+            <div class="productions__left">
+              <h2 class="productions__header page-h2">Продукция</h2>
+              <span class="productions__left-text page-text-24">
+                Кубовидный щебень и песок компания
+                «Выбор» производит на собственном карьере в г. Курганинске на дробильном оборудовании Sandvik, BHS и сортировочном оборудовании Binder.
+              </span>
+              <a href="" class="productions__link page-btn"><img src="./img/svg/document-download.svg" alt="">Скачать прайс</a>
+              <a href="" class="productions__link page-btn">Перейти в каталог</a>
+            </div>
+            <div class="productions__right">
+              <div class="productions__right-top"><a href="" class="productions__catalog page-btn">Перейти в каталог</a></div>
+              <div class="productions__right-wrap" data-accordion="parent">
+                <div class="productions__right-acc is-active" data-accordion="element">
+                  <div class="productions__right-acc__headline" data-accordion="button">
+                    <span class="page-text-24">Щебень 4-8</span>
+                    <div class="productions__right-acc__btn"></div>
+                  </div>
+                  <div class="productions__right-acc__content" data-accordion="content">
+                    <div class="productions__right-acc__content-left">
+                      <p class="productions__right-acc__content-text">Промывка переработанного сырья, и передовые способы дробления и сортировки, применяемые на ДСЗ, ДСЗ-2 позволяют получать широкую линейку высококачественного кубовидного щебня многоцелевого применения. </p>
+                      <div class="productions__right-acc__content-wrap">
+                        <span class="productions__right-acc__content-name">Гранулометрический состав:</span>
+                        <div class="productions__right-acc__content-table">
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                        </div>
+                        <div class="productions__right-acc__btn">
+                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productions__right-acc__content-right"><img src="./img/content/product-1.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="productions__right-acc" data-accordion="element">
+                  <div class="productions__right-acc__headline" data-accordion="button">
+                    <span class="page-text-24">Щебень 4-8</span>
+                    <div class="productions__right-acc__btn"></div>
+                  </div>
+                  <div class="productions__right-acc__content" data-accordion="content">
+                    <div class="productions__right-acc__content-left">
+                      <p class="productions__right-acc__content-text">Промывка переработанного сырья, и передовые способы дробления и сортировки, применяемые на ДСЗ, ДСЗ-2 позволяют получать широкую линейку высококачественного кубовидного щебня многоцелевого применения. </p>
+                      <div class="productions__right-acc__content-wrap">
+                        <span class="productions__right-acc__content-name">Гранулометрический состав:</span>
+                        <div class="productions__right-acc__content-table">
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                        </div>
+                        <div class="productions__right-acc__btn">
+                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productions__right-acc__content-right"><img src="./img/content/product-1.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="productions__right-acc" data-accordion="element">
+                  <div class="productions__right-acc__headline" data-accordion="button">
+                    <span class="page-text-24">Щебень 4-8</span>
+                    <div class="productions__right-acc__btn"></div>
+                  </div>
+                  <div class="productions__right-acc__content" data-accordion="content">
+                    <div class="productions__right-acc__content-left">
+                      <p class="productions__right-acc__content-text">Промывка переработанного сырья, и передовые способы дробления и сортировки, применяемые на ДСЗ, ДСЗ-2 позволяют получать широкую линейку высококачественного кубовидного щебня многоцелевого применения. </p>
+                      <div class="productions__right-acc__content-wrap">
+                        <span class="productions__right-acc__content-name">Гранулометрический состав:</span>
+                        <div class="productions__right-acc__content-table">
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                        </div>
+                        <div class="productions__right-acc__btn">
+                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productions__right-acc__content-right"><img src="./img/content/product-1.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="productions__right-acc" data-accordion="element">
+                  <div class="productions__right-acc__headline" data-accordion="button">
+                    <span class="page-text-24">Щебень 4-8</span>
+                    <div class="productions__right-acc__btn"></div>
+                  </div>
+                  <div class="productions__right-acc__content" data-accordion="content">
+                    <div class="productions__right-acc__content-left">
+                      <p class="productions__right-acc__content-text">Промывка переработанного сырья, и передовые способы дробления и сортировки, применяемые на ДСЗ, ДСЗ-2 позволяют получать широкую линейку высококачественного кубовидного щебня многоцелевого применения. </p>
+                      <div class="productions__right-acc__content-wrap">
+                        <span class="productions__right-acc__content-name">Гранулометрический состав:</span>
+                        <div class="productions__right-acc__content-table">
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                        </div>
+                        <div class="productions__right-acc__btn">
+                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productions__right-acc__content-right"><img src="./img/content/product-1.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="productions__right-acc" data-accordion="element">
+                  <div class="productions__right-acc__headline" data-accordion="button">
+                    <span class="page-text-24">Щебень 4-8</span>
+                    <div class="productions__right-acc__btn"></div>
+                  </div>
+                  <div class="productions__right-acc__content" data-accordion="content">
+                    <div class="productions__right-acc__content-left">
+                      <p class="productions__right-acc__content-text">Промывка переработанного сырья, и передовые способы дробления и сортировки, применяемые на ДСЗ, ДСЗ-2 позволяют получать широкую линейку высококачественного кубовидного щебня многоцелевого применения. </p>
+                      <div class="productions__right-acc__content-wrap">
+                        <span class="productions__right-acc__content-name">Гранулометрический состав:</span>
+                        <div class="productions__right-acc__content-table">
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                        </div>
+                        <div class="productions__right-acc__btn">
+                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productions__right-acc__content-right"><img src="./img/content/product-1.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="history">
+        <div class="container">
+          <div class="history__wrapper">
+            <h2 class="history__header page-h2">Карьер</h2>
+            <div class="history__wrap">
+              <div class="history__left">
+                <p class="history__text page-text-24">
+                  Кубовидный щебень и песок компания «Выбор» производит на собственном карьере в г. Курганинске на дробильном оборудовании Sandvik, BHS и сортировочном оборудовании Binder.
+                </p>
+                <p class="history__text page-text-18">
+                  Завод расположен на месторождении валунно-гравийно-песчаной смеси площадью более 250 га, запасы месторождения более 30 000 000 м3. Использование высокопроизводительного оборудования, лучших компонентов и непрерывный лаборато-
+                  рный контроль позволяет выпускать продукцию, отвечающую всем требованиям и соответствующую стандартам РФ.
+                </p>
+                <ul class="history__list">
+                  <li class="history__item">
+                    <span class="history-year page-text-18">2009</span>
+                    <span class="history__text page-text-18">Запуск крупнейшего в Краснодарском крае дробильно-сортировочного завода (производительность – 2 млн. м3в год).</span>
+                  </li>
+                  <li class="history__item">
+                    <span class="history-year page-text-18">2011</span>
+                    <span class="history__text page-text-18">Запуск плавучего грейферного земснаряда (производительность – 800 тонн в час).</span>
+                  </li>
+                  <li class="history__item">
+                    <span class="history-year page-text-18">2011</span>
+                    <span class="history__text page-text-18">Открытие завода по производству элементов благоустройства и стенового ограждения.</span>
+                  </li>
+                  <li class="history__item">
+                    <span class="history-year page-text-18">2019</span>
+                    <span class="history__text page-text-18">Открытие установки рассева узких фракций.</span>
+                  </li>
+                  <li class="history__item">
+                    <span class="history-year page-text-18">2021</span>
+                    <span class="history__text page-text-18">Открытие ДСЗ-2.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="history__right"><img src="./img/content/history.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mini-banner --white">
+        <div class="container">
+          <div class="mini-banner__wrapper">
+            <img src="./img/content/mini-banner.jpg" alt="">
+            <!-- <p class="mini-banner__text">Собственная аккредитованная лаборатория позволяет выпускать продукцию, отвечающую всем требованиям и соответствующую стандартам РФ.</p> -->
+          </div>
+        </div>
+      </section>
+      <section class="about --short-padded">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__headline">
+              <h2 class="about__header page-h2">Наши достижения</h2>
+            </div>
+            <div class="about__wrap">
+              <div class="about__content">
+                <div class="about__content-left">
+                  <span class="about__content-span page-text-24">Компания «Выбор» работает на прогресс и делает максимум для развития технологий и разработки инновационных методов производства.</span>
+                  <a href="" class="about__content-link page-btn">Узнать больше</a>
+                </div>
+                <div class="about__content-right">
+                  <ul class="about__content-list">
+                    <li class="about__content-item">
+                      <img src="./img/svg/Ellipse.svg" alt="">
+                      <span class="about__big">2</span>
+                      <p class="about__content-text page-text-18">млн. м² - самое крупное месторождение в Краснодарском крае.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/svg/Ellipse.svg" alt="">
+                      <span class="about__big">33</span>
+                      <p class="about__content-text page-text-18">тыс. м³ утвержденных запасов.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/svg/Ellipse.svg" alt="">
+                      <span class="about__big">22</span>
+                      <p class="about__content-text page-text-18">тыс. м³ остатка
+                        балансовых запасов</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/svg/Ellipse.svg" alt="">
+                      <span class="about__big">10</span>
+                      <p class="about__content-text page-text-18">тыс. тонн отгрузки в сутки.</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/svg/Ellipse.svg" alt="">
+                      <span class="about__big">2</span>
+                      <p class="about__content-text page-text-18">завода с оборудованием мирового уровня «METSO», «BHS SONTHOFER».</p>
+                    </li>
+                    <li class="about__content-item">
+                      <img src="./img/svg/Ellipse.svg" alt="">
+                      <span class="about__big">20</span>
+                      <p class="about__content-text page-text-18">метров глубина добычи уникальным в России плавучим грейферным снарядом фирмы «ROHR BAGGER».</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__wrapper">
+            <div class="gallery__headline">
+              <h2 class="gallery__header page-h2">Галерея</h2>
+              <a href="#" class="gallery__link page-btn">Перейти в галерею</a>
+            </div>
+            <div class="gallery__slider-wrapper">
+              <div class="gallery__slider --index">
+                <div class="gallery__slide">
+                  <img src="./img/content/gallery-1.jpg" alt="" class="gallery__slider-img">
+                  <div class="gallery__slider-info">
+                    <span class="gallery__slider-text">Запуск крупнейшего в Краснодарском крае дробильно-сортировочного завода</span>
+                    <ul class="gallery__slider-tags">
+                      <li class="gallery__slider-tag">Карьер</li>
+                      <li class="gallery__slider-tag">Земснаряд</li>
+                      <li class="gallery__slider-tag">ДС-3</li>
+                      <li class="gallery__slider-tag">Завод</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="gallery__slide">
+                  <img src="./img/content/gallery-1.jpg" alt="" class="gallery__slider-img">
+                  <div class="gallery__slider-info">
+                    <span class="gallery__slider-text">Запуск крупнейшего в Краснодарском крае дробильно-сортировочного завода</span>
+                    <ul class="gallery__slider-tags">
+                      <li class="gallery__slider-tag">Карьер</li>
+                      <li class="gallery__slider-tag">Земснаряд</li>
+                      <li class="gallery__slider-tag">ДС-3</li>
+                      <li class="gallery__slider-tag">Завод</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="gallery__slide">
+                  <img src="./img/content/gallery-1.jpg" alt="" class="gallery__slider-img">
+                  <div class="gallery__slider-info">
+                    <span class="gallery__slider-text">Запуск крупнейшего в Краснодарском крае дробильно-сортировочного завода</span>
+                    <ul class="gallery__slider-tags">
+                      <li class="gallery__slider-tag">Карьер</li>
+                      <li class="gallery__slider-tag">Земснаряд</li>
+                      <li class="gallery__slider-tag">ДС-3</li>
+                      <li class="gallery__slider-tag">Завод</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="gallery__slide">
+                  <img src="./img/content/gallery-1.jpg" alt="" class="gallery__slider-img">
+                  <div class="gallery__slider-info">
+                    <span class="gallery__slider-text">Запуск крупнейшего в Краснодарском крае дробильно-сортировочного завода</span>
+                    <ul class="gallery__slider-tags">
+                      <li class="gallery__slider-tag">Карьер</li>
+                      <li class="gallery__slider-tag">Земснаряд</li>
+                      <li class="gallery__slider-tag">ДС-3</li>
+                      <li class="gallery__slider-tag">Завод</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__controlls">
+              <div class="gallery-controll gallery-prev"><img src="./img/svg/arrow-bottom.svg" alt=""></div>
+              <div class="gallery-controll gallery-next"><img src="./img/svg/arrow-bottom.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="container">
+        <p><a href="#" data-open-modal="feedback">modal--feedback link</a></p>
+        <p><a href="#" data-open-modal="success">modal--success link</a></p>
+      </div> -->
+    </main>
+    <section class="questions">
+      <div class="container">
+        <div class="questions__wrapper">
+          <h2 class="questions__header page-h2">Остались вопросы?</h2>
+          <div class="questions__wrap">
+            <div class="questions__left">
+              <p class="questions__text page-text-24">
+                Мы с радостью вам поможем!<br>
+                Оставьте заявку и наш менеджер свяжется с вами в ближайшее время.
+                <br><br>
+                Вы тык же можете воспользоваться обратным звонком.
+              </p>
+              <a href="" class="questions__button page-btn"><img src="../img/svg/phone.svg" alt=""> Обратный звонок</a>
+            </div>
+            <div class="questions__right">
+              <form action="" class="questions__form">
+                <div class="questions__fields">
+                  <label for="" class="questions__label">
+                    <span class="questions__field-text page-text-18">Ваше имя:</span>
+                    <input type="text" class="questions__field">
+                  </label>
+                  <label for="" class="questions__label">
+                    <span class="questions__field-text page-text-18">Город:</span>
+                    <input type="text" class="questions__field">
+                  </label>
+                  <label for="" class="questions__label">
+                    <span class="questions__field-text page-text-18">Контактный номер:</span>
+                    <input type="text" class="questions__field">
+                  </label>
+                  <label for="" class="questions__label">
+                    <span class="questions__field-text page-text-18">Email:</span>
+                    <input type="text" class="questions__field">
+                  </label>
+                </div>
+                <div class="questions__btns">
+                  <button class="questions__submit page-btn-black">Отправить</button>
+                  <span class="questions__terms page-text-18">Нажимая кнопку, я даю согласие на обработку <a href="">персональных данных</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a href="" class="footer__logo"><img src="../img/svg/logo-white.svg" alt=""></a>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="" class="page-text-18">О компании</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Продукция</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Галерея</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Документы</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Оплата и доставка</a></li>
+              <li class="footer__item"><a href="" class="page-text-18">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="footer__wrap">
+            <a href="" class="footer__phone page-text-18"><img src="../img/svg/phone-white.svg" alt="">+7 928 258-05-08</a>
+            <a href="" class="footer__btn page-btn">Обратный звонок</a>
+          </div>
+          <div class="footer__wrap">
+            <a href="" class="footer__link page-text-18"><img src="../img/svg/mail-white.svg" alt="">info@vibor-transit.ru</a>
+            <a href="" class="footer__link page-text-18"><img src="../img/svg/pin.svg" alt="">г. Курганинск, Кошехабльское ш., 15</a>
+            <div class="footer__socials">
+              <a href="" class="footer__social"><img src="#" alt=""></a>
+              <a href="" class="footer__social"><img src="#" alt=""></a>
+              <a href="" class="footer__social"><img src="#" alt=""></a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <span class="footer__text page-text-18">© 1996 — 2023 Карьер Курганинский — Карьер по добыче инертных материалов компании Выбор.</span>
+            <div class="footer__bottom-wrap">
+              <span class="footer__text page-text-18">Представленная информация не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ и носит информационный характер. Изображения товаров могут отличаться от оригинала производимой продукции по цвету в связи с особенностью производственного процесса.</span>
+              <span class="footer__text page-text-18">Политика конфиденциальности</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
