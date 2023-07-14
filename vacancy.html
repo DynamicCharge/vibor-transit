@@ -47,21 +47,33 @@
             <img src="./img/svg/logo.svg" alt="">
           </span>
           <div class="header__wrap">
-            <nav class="header__nav">
+            <nav class="header__nav" data-burger-list>
               <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="">О компании</a></li>
+                <li class="header__nav-item --dropdown">
+                  <span>О компании</span>
+                  <div class="header__nav-item__sub">
+                    <a href="">Section 1</a>
+                    <a href="">Section 2</a>
+                  </div>
+                </li>
                 <li class="header__nav-item"><a href="">Продукция</a></li>
                 <li class="header__nav-item"><a href="">Галерея</a></li>
                 <li class="header__nav-item"><a href="">Документы</a></li>
                 <li class="header__nav-item"><a href="">Оплата и доставка</a></li>
                 <li class="header__nav-item"><a href="">Контакты</a></li>
               </ul>
+              <a href="#" class="header__btn page-btn">Обратный звонок</a>
             </nav>
           </div>
           <div class="header__wrap">
-            <a href="mailto:info@vibor-transit.ru" class="header__link"><img src="./img/svg/mail.svg" alt="">info@vibor-transit.ru</a>
-            <a href="tel:+7 928 258-05-08" class="header__link"><img src="./img/svg/phone.svg" alt="">+7 928 258-05-08</a>
+            <a href="mailto:info@vibor-transit.ru" class="header__link"><img src="./img/svg/mail.svg" alt=""> <span>info@vibor-transit.ru</span></a>
+            <a href="tel:+7 928 258-05-08" class="header__link"><img src="./img/svg/phone.svg" alt=""> <span>+7 928 258-05-08</span></a>
             <a href="#" class="header__btn page-btn">Обратный звонок</a>
+            <div class="header__burger" data-burger>
+              <div class="header__burger-wrap">
+                <div class="header__burger-item"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -88,22 +100,108 @@
                 <p class="vacancy__text page-text-24">Стабильная заработная плата, вахтовый автобус.</p>
               </div>
               <div class="vacancy__right">
-                <ul class="vacancy__list">
-                  <li class="vacancy__item">
-                    <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
-                    <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                <ul class="vacancy__list" data-accordion="parent">
+                  <li class="vacancy__item" data-accordion="element">
+                    <div class="vacancy__item-headline" data-accordion="button">
+                      <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
+                      <div class="productions__right-acc__btn"></div>
+                    </div>
+                    <div class="vacancy__item-content" data-accordion="content">
+                      <div class="vacancy__item-text">
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                      </div>
+                      <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                    </div>
                   </li>
-                  <li class="vacancy__item">
-                    <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
-                    <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                  <li class="vacancy__item" data-accordion="element">
+                    <div class="vacancy__item-headline" data-accordion="button">
+                      <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
+                      <div class="productions__right-acc__btn"></div>
+                    </div>
+                    <div class="vacancy__item-content" data-accordion="content">
+                      <div class="vacancy__item-text">
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                      </div>
+                      <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                    </div>
                   </li>
-                  <li class="vacancy__item">
-                    <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
-                    <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                  <li class="vacancy__item" data-accordion="element">
+                    <div class="vacancy__item-headline" data-accordion="button">
+                      <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
+                      <div class="productions__right-acc__btn"></div>
+                    </div>
+                    <div class="vacancy__item-content" data-accordion="content">
+                      <div class="vacancy__item-text">
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                      </div>
+                      <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                    </div>
                   </li>
-                  <li class="vacancy__item">
-                    <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
-                    <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                  <li class="vacancy__item" data-accordion="element">
+                    <div class="vacancy__item-headline" data-accordion="button">
+                      <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
+                      <div class="productions__right-acc__btn"></div>
+                    </div>
+                    <div class="vacancy__item-content" data-accordion="content">
+                      <div class="vacancy__item-text">
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                      </div>
+                      <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                    </div>
+                  </li>
+                  <li class="vacancy__item" data-accordion="element">
+                    <div class="vacancy__item-headline" data-accordion="button">
+                      <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
+                      <div class="productions__right-acc__btn"></div>
+                    </div>
+                    <div class="vacancy__item-content" data-accordion="content">
+                      <div class="vacancy__item-text">
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                      </div>
+                      <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                    </div>
+                  </li>
+                  <li class="vacancy__item" data-accordion="element">
+                    <div class="vacancy__item-headline" data-accordion="button">
+                      <span class="vacancy__name page-text-24">Специалист отдела финансов</span>
+                      <div class="productions__right-acc__btn"></div>
+                    </div>
+                    <div class="vacancy__item-content" data-accordion="content">
+                      <div class="vacancy__item-text">
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                        <h4>Описание</h4>
+                        <p>Enthusiastically plagiarize synergistic data via market-driven mindshare. Globally utilize transparent alignments vis-a-vis business processes. Appropriately mesh highly efficient action items and collaborative processes. Authoritatively benchmark functionalized customer service after tactical niche markets.</p>
+                      </div>
+                      <a href="" class="vacancy__btn page-btn">Откликнуться</a>
+                    </div>
                   </li>
                 </ul>
               </div>

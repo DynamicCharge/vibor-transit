@@ -47,21 +47,33 @@
             <img src="./img/svg/logo.svg" alt="">
           </span>
           <div class="header__wrap">
-            <nav class="header__nav">
+            <nav class="header__nav" data-burger-list>
               <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="">О компании</a></li>
+                <li class="header__nav-item --dropdown">
+                  <span>О компании</span>
+                  <div class="header__nav-item__sub">
+                    <a href="">Section 1</a>
+                    <a href="">Section 2</a>
+                  </div>
+                </li>
                 <li class="header__nav-item"><a href="">Продукция</a></li>
                 <li class="header__nav-item"><a href="">Галерея</a></li>
                 <li class="header__nav-item"><a href="">Документы</a></li>
                 <li class="header__nav-item"><a href="">Оплата и доставка</a></li>
                 <li class="header__nav-item"><a href="">Контакты</a></li>
               </ul>
+              <a href="#" class="header__btn page-btn">Обратный звонок</a>
             </nav>
           </div>
           <div class="header__wrap">
-            <a href="mailto:info@vibor-transit.ru" class="header__link"><img src="./img/svg/mail.svg" alt="">info@vibor-transit.ru</a>
-            <a href="tel:+7 928 258-05-08" class="header__link"><img src="./img/svg/phone.svg" alt="">+7 928 258-05-08</a>
+            <a href="mailto:info@vibor-transit.ru" class="header__link"><img src="./img/svg/mail.svg" alt=""> <span>info@vibor-transit.ru</span></a>
+            <a href="tel:+7 928 258-05-08" class="header__link"><img src="./img/svg/phone.svg" alt=""> <span>+7 928 258-05-08</span></a>
             <a href="#" class="header__btn page-btn">Обратный звонок</a>
+            <div class="header__burger" data-burger>
+              <div class="header__burger-wrap">
+                <div class="header__burger-item"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -183,7 +195,7 @@
               <a href="" class="productions__link page-btn">Перейти в каталог</a>
             </div>
             <div class="productions__right">
-              <div class="productions__right-top"><a href="" class="productions__catalog page-btn">Перейти в каталог</a></div>
+              <div class="productions__right-top"><a href="" class="productions__catalog-right__btn page-btn">Перейти в каталог</a></div>
               <div class="productions__right-wrap" data-accordion="parent">
                 <div class="productions__right-acc is-active" data-accordion="element">
                   <div class="productions__right-acc__headline" data-accordion="button">
@@ -215,7 +227,46 @@
                             <span class="productions__right-acc__content-table__item">d/2</span>
                           </div>
                         </div>
-                        <div class="productions__right-acc__btn">
+                        <div class="productions__right-acc__btns">
+                          <a href="" class="productions__right-acc__button page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productions__right-acc__content-right"><img src="./img/content/product-1.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="productions__right-acc" data-accordion="element">
+                  <div class="productions__right-acc__headline" data-accordion="button">
+                    <span class="page-text-24">Щебень 4-8</span>
+                    <div class="productions__right-acc__btn"></div>
+                  </div>
+                  <div class="productions__right-acc__content" data-accordion="content">
+                    <div class="productions__right-acc__content-left">
+                      <p class="productions__right-acc__content-text">Промывка переработанного сырья, и передовые способы дробления и сортировки, применяемые на ДСЗ, ДСЗ-2 позволяют получать широкую линейку высококачественного кубовидного щебня многоцелевого применения. </p>
+                      <div class="productions__right-acc__content-wrap">
+                        <span class="productions__right-acc__content-name">Гранулометрический состав:</span>
+                        <div class="productions__right-acc__content-table">
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                          <div class="productions__right-acc__content-row">
+                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
+                            <span class="productions__right-acc__content-table__item">2D</span>
+                            <span class="productions__right-acc__content-table__item">1.4D</span>
+                            <span class="productions__right-acc__content-table__item">D</span>
+                            <span class="productions__right-acc__content-table__item">D/1,4</span>
+                            <span class="productions__right-acc__content-table__item">d</span>
+                            <span class="productions__right-acc__content-table__item">d/2</span>
+                          </div>
+                        </div>
+                        <div class="productions__right-acc__btns">
                           <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>
@@ -254,7 +305,7 @@
                             <span class="productions__right-acc__content-table__item">d/2</span>
                           </div>
                         </div>
-                        <div class="productions__right-acc__btn">
+                        <div class="productions__right-acc__btns">
                           <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>
@@ -293,7 +344,7 @@
                             <span class="productions__right-acc__content-table__item">d/2</span>
                           </div>
                         </div>
-                        <div class="productions__right-acc__btn">
+                        <div class="productions__right-acc__btns">
                           <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>
@@ -332,46 +383,7 @@
                             <span class="productions__right-acc__content-table__item">d/2</span>
                           </div>
                         </div>
-                        <div class="productions__right-acc__btn">
-                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
-                          <a href="" class="productions__right-acc__link">Подробнее</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="productions__right-acc__content-right"><img src="./img/content/product-1.jpg" alt=""></div>
-                  </div>
-                </div>
-                <div class="productions__right-acc" data-accordion="element">
-                  <div class="productions__right-acc__headline" data-accordion="button">
-                    <span class="page-text-24">Щебень 4-8</span>
-                    <div class="productions__right-acc__btn"></div>
-                  </div>
-                  <div class="productions__right-acc__content" data-accordion="content">
-                    <div class="productions__right-acc__content-left">
-                      <p class="productions__right-acc__content-text">Промывка переработанного сырья, и передовые способы дробления и сортировки, применяемые на ДСЗ, ДСЗ-2 позволяют получать широкую линейку высококачественного кубовидного щебня многоцелевого применения. </p>
-                      <div class="productions__right-acc__content-wrap">
-                        <span class="productions__right-acc__content-name">Гранулометрический состав:</span>
-                        <div class="productions__right-acc__content-table">
-                          <div class="productions__right-acc__content-row">
-                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
-                            <span class="productions__right-acc__content-table__item">2D</span>
-                            <span class="productions__right-acc__content-table__item">1.4D</span>
-                            <span class="productions__right-acc__content-table__item">D</span>
-                            <span class="productions__right-acc__content-table__item">D/1,4</span>
-                            <span class="productions__right-acc__content-table__item">d</span>
-                            <span class="productions__right-acc__content-table__item">d/2</span>
-                          </div>
-                          <div class="productions__right-acc__content-row">
-                            <span class="productions__right-acc__content-table__item">Диаметр отверстий контрольных сит, мм</span>
-                            <span class="productions__right-acc__content-table__item">2D</span>
-                            <span class="productions__right-acc__content-table__item">1.4D</span>
-                            <span class="productions__right-acc__content-table__item">D</span>
-                            <span class="productions__right-acc__content-table__item">D/1,4</span>
-                            <span class="productions__right-acc__content-table__item">d</span>
-                            <span class="productions__right-acc__content-table__item">d/2</span>
-                          </div>
-                        </div>
-                        <div class="productions__right-acc__btn">
+                        <div class="productions__right-acc__btns">
                           <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>

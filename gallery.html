@@ -47,21 +47,33 @@
             <img src="./img/svg/logo.svg" alt="">
           </span>
           <div class="header__wrap">
-            <nav class="header__nav">
+            <nav class="header__nav" data-burger-list>
               <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="">О компании</a></li>
+                <li class="header__nav-item --dropdown">
+                  <span>О компании</span>
+                  <div class="header__nav-item__sub">
+                    <a href="">Section 1</a>
+                    <a href="">Section 2</a>
+                  </div>
+                </li>
                 <li class="header__nav-item"><a href="">Продукция</a></li>
                 <li class="header__nav-item"><a href="">Галерея</a></li>
                 <li class="header__nav-item"><a href="">Документы</a></li>
                 <li class="header__nav-item"><a href="">Оплата и доставка</a></li>
                 <li class="header__nav-item"><a href="">Контакты</a></li>
               </ul>
+              <a href="#" class="header__btn page-btn">Обратный звонок</a>
             </nav>
           </div>
           <div class="header__wrap">
-            <a href="mailto:info@vibor-transit.ru" class="header__link"><img src="./img/svg/mail.svg" alt="">info@vibor-transit.ru</a>
-            <a href="tel:+7 928 258-05-08" class="header__link"><img src="./img/svg/phone.svg" alt="">+7 928 258-05-08</a>
+            <a href="mailto:info@vibor-transit.ru" class="header__link"><img src="./img/svg/mail.svg" alt=""> <span>info@vibor-transit.ru</span></a>
+            <a href="tel:+7 928 258-05-08" class="header__link"><img src="./img/svg/phone.svg" alt=""> <span>+7 928 258-05-08</span></a>
             <a href="#" class="header__btn page-btn">Обратный звонок</a>
+            <div class="header__burger" data-burger>
+              <div class="header__burger-wrap">
+                <div class="header__burger-item"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,6 +92,81 @@
       <section class="page-gallery">
         <div class="container">
           <h2 class="page-h2">Галерея</h2>
+          <div class="page-gallery__filters">
+            <form action="" class="page-gallery__form">
+              <div class="page-gallery__form-wrap">
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Карьер</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Земснаряд</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Карьер</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">ДС-3</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Земснаряд</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Завод</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">ДС-3</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Завод</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Карьер</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Земснаряд</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">ДС-3</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Завод</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Карьер</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Земснаряд</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">ДС-3</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Завод</span>
+                </label>
+                <label class="page-gallery__label">
+                  <input type="checkbox" class="page-gallery__check">
+                  <span class="page-gallery__custom-check page-text-18">Земснаряд</span>
+                </label>
+              </div>
+              <button class="page-gallery__filters-reset page-btn">Сбросить выбор</button>
+            </form>
+          </div>
           <div class="page-gallery__wrapper">
             <div class="page-gallery__list">
               <a href="#test-1" data-fancybox="page-gallery-img" class="page-gallery__item page-gallery__item--1">
