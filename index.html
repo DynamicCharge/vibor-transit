@@ -44,9 +44,9 @@
     <header class="header ">
       <div class="container">
         <div class="header__wrapper">
-          <span class="header__logo">
+          <a class="header__logo" href="index.html" aria-label="Переход на главную">
             <img src="./img/svg/logo.svg" alt="">
-          </span>
+          </a>
           <div class="header__wrap">
             <nav class="header__nav" data-burger-list>
               <ul class="header__nav-list">
@@ -63,7 +63,7 @@
                 <li class="header__nav-item"><a href="">Оплата и доставка</a></li>
                 <li class="header__nav-item"><a href="">Контакты</a></li>
               </ul>
-              <a href="#" class="header__btn page-btn">Обратный звонок</a>
+              <a href="#" class="header__btn page-btn" data-open-modal="feedback">Обратный звонок</a>
             </nav>
           </div>
           <div class="header__wrap">
@@ -83,14 +83,19 @@
       <section class="title">
         <div class="container">
           <div class="title__wrapper">
-            <!-- <video src="" class="title__video" src=""></video> -->
-            <img src="./img/content/title.jpg" alt="" class="title__video">
+            <div class="title__video-wrap">
+              <video src="./img/video/videoplayback.mp4" id="video" poster="./img/content/title.jpg" class="title__video"></video>
+              <!-- <img src="./img/content/title.jpg" alt="" class="title__video"> -->
+              <div class="title__play">
+                <img src="./img/svg/play.svg" alt="">
+              </div>
+            </div>
             <h1 class="title__header">Карьер Курганинский</h1>
-            <a href="" class="title__link"><img src="./img/svg/arrow-bottom.svg" alt=""></a>
+            <a href="#about" class="title__link"><img src="./img/svg/arrow-bottom.svg" alt=""></a>
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__wrapper" data-tabs="parent">
             <div class="about__headline">
@@ -229,7 +234,7 @@
                           </div>
                         </div>
                         <div class="productions__right-acc__btns">
-                          <a href="" class="productions__right-acc__button page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__button page-btn-black" data-open-modal="good">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>
                       </div>
@@ -268,7 +273,7 @@
                           </div>
                         </div>
                         <div class="productions__right-acc__btns">
-                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__button page-btn-black" data-open-modal="good">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>
                       </div>
@@ -307,7 +312,7 @@
                           </div>
                         </div>
                         <div class="productions__right-acc__btns">
-                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__button page-btn-black" data-open-modal="good">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>
                       </div>
@@ -346,7 +351,7 @@
                           </div>
                         </div>
                         <div class="productions__right-acc__btns">
-                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__button page-btn-black" data-open-modal="good">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>
                       </div>
@@ -385,7 +390,7 @@
                           </div>
                         </div>
                         <div class="productions__right-acc__btns">
-                          <a href="" class="productions__right-acc__btn page-btn-black">Оставить заявку</a>
+                          <a href="" class="productions__right-acc__button page-btn-black" data-open-modal="good">Оставить заявку</a>
                           <a href="" class="productions__right-acc__link">Подробнее</a>
                         </div>
                       </div>
@@ -594,26 +599,26 @@
                 <br><br>
                 Вы тык же можете воспользоваться обратным звонком.
               </p>
-              <a href="" class="questions__button page-btn"><img src="../img/svg/phone.svg" alt=""> Обратный звонок</a>
+              <a href="" class="questions__button page-btn" data-open-modal="feedback"><img src="../img/svg/phone.svg" alt=""> Обратный звонок</a>
             </div>
             <div class="questions__right">
               <form action="" class="questions__form">
                 <div class="questions__fields">
-                  <label for="" class="questions__label">
+                  <label class="questions__label">
                     <span class="questions__field-text page-text-18">Ваше имя:</span>
                     <input type="text" class="questions__field">
                   </label>
-                  <label for="" class="questions__label">
+                  <label class="questions__label">
                     <span class="questions__field-text page-text-18">Город:</span>
-                    <input type="text" class="questions__field">
+                    <input type="text" required class="questions__field">
                   </label>
-                  <label for="" class="questions__label">
+                  <label class="questions__label">
                     <span class="questions__field-text page-text-18">Контактный номер:</span>
-                    <input type="text" class="questions__field">
+                    <input type="text" required class="questions__field">
                   </label>
-                  <label for="" class="questions__label">
+                  <label class="questions__label">
                     <span class="questions__field-text page-text-18">Email:</span>
-                    <input type="text" class="questions__field">
+                    <input type="email" required class="questions__field">
                   </label>
                 </div>
                 <div class="questions__btns">
@@ -632,7 +637,13 @@
           <a href="" class="footer__logo"><img src="../img/svg/logo-white.svg" alt=""></a>
           <nav class="footer__nav">
             <ul class="footer__list">
-              <li class="footer__item"><a href="" class="page-text-18">О компании</a></li>
+              <li class="footer__item --dropdown">
+                <span href="" class="page-text-18">О компании</span>
+                <div class="footer__item__sub">
+                  <a href="" class="page-text-18">Section 1</a>
+                  <a href="" class="page-text-18">Section 2</a>
+                </div>
+              </li>
               <li class="footer__item"><a href="" class="page-text-18">Продукция</a></li>
               <li class="footer__item"><a href="" class="page-text-18">Галерея</a></li>
               <li class="footer__item"><a href="" class="page-text-18">Документы</a></li>
@@ -642,22 +653,22 @@
           </nav>
           <div class="footer__wrap">
             <a href="" class="footer__phone page-text-18"><img src="../img/svg/phone-white.svg" alt="">+7 928 258-05-08</a>
-            <a href="" class="footer__btn page-btn">Обратный звонок</a>
+            <a href="" class="footer__btn page-btn" data-open-modal="feedback">Обратный звонок</a>
           </div>
           <div class="footer__wrap">
             <a href="" class="footer__link page-text-18"><img src="../img/svg/mail-white.svg" alt="">info@vibor-transit.ru</a>
-            <a href="" class="footer__link page-text-18"><img src="../img/svg/pin.svg" alt="">г. Курганинск, Кошехабльское ш., 15</a>
+            <span class="footer__link page-text-18"><img src="../img/svg/pin.svg" alt="">г. Курганинск, Кошехабльское ш., 15</span>
             <div class="footer__socials">
-              <a href="" class="footer__social"><img src="#" alt=""></a>
-              <a href="" class="footer__social"><img src="#" alt=""></a>
-              <a href="" class="footer__social"><img src="#" alt=""></a>
+              <a href="" class="footer__social"><img src="./img/svg/vk.svg" alt=""></a>
+              <a href="" class="footer__social"><img src="./img/svg/telegram-plane.svg" alt=""></a>
+              <a href="" class="footer__social"><img src="./img/svg/youtube.svg" alt=""></a>
             </div>
           </div>
           <div class="footer__bottom">
             <span class="footer__text page-text-18">© 1996 — 2023 Карьер Курганинский — Карьер по добыче инертных материалов компании Выбор.</span>
             <div class="footer__bottom-wrap">
               <span class="footer__text page-text-18">Представленная информация не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ и носит информационный характер. Изображения товаров могут отличаться от оригинала производимой продукции по цвету в связи с особенностью производственного процесса.</span>
-              <span class="footer__text page-text-18">Политика конфиденциальности</span>
+              <a href="" class="footer__text page-text-18">Политика конфиденциальности</a>
             </div>
           </div>
         </div>
@@ -690,11 +701,122 @@
         </div>
       </div>
     </div>
+    <div class="modal modal--preload    " data-modal="good">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="mymodal-wrapper">
+            <div class="mymodal__headline">
+              <span class="mymodal__header">Заявка на Щебень 4-8</span>
+              <p class="mymodal__text page-text-24">Заполните короткую форму, специалиста свяжется с вами в ближайшее время и уточнит детали.</p>
+            </div>
+            <form action="" class="mymodal__form">
+              <div class="mymodal__from-wrap --grid">
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Ваше имя:</span>
+                  <input type="text" required class="mymodal__field">
+                </label>
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Город:</span>
+                  <input type="text" required class="mymodal__field">
+                </label>
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Контактный номер:</span>
+                  <input type="phone" required class="mymodal__field">
+                </label>
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Email:</span>
+                  <input type="email" required class="mymodal__field">
+                </label>
+              </div>
+              <div class="mymodal__form-bottom">
+                <button class="mymodal__submit page-btn-black">Отправить</button>
+                <span class="mymodal__terms page-text-18">Нажимая кнопку, я даю согласиена обработку <a href="">персональных данных</a></span>
+              </div>
+            </form>
+          </div>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload    " data-modal="vacancy">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="mymodal-wrapper">
+            <div class="mymodal__headline">
+              <span class="mymodal__header">Заявка на Щебень 4-8</span>
+            </div>
+            <form action="" class="mymodal__form">
+              <div class="mymodal__from-wrap --grid-shitty">
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Ваше ФИО:</span>
+                  <input type="text" required class="mymodal__field">
+                </label>
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Контактный номер:</span>
+                  <input type="phone" required class="mymodal__field">
+                </label>
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Email:</span>
+                  <input type="email" required class="mymodal__field">
+                </label>
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Комментарий:</span>
+                  <input type="text" required class="mymodal__field">
+                </label>
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Добавьте ссылку на резюме:</span>
+                  <input type="text" required class="mymodal__field">
+                </label>
+                <label class="mymodal__from-label">
+                  <span class="page-text-18">Или загрузите файл до 2мб:</span>
+                  <input type="file" required class="mymodal__file">
+                  <div class="mymodal__file-custom-file page-btn-black"><img src="./img/svg/upload.svg" alt="">Загрузить резюме</div>
+                  <div class="mymodal__file-info">
+                    <div>
+                      <span class="page-text-18 file-name">Adnrew_resume.doc</span>
+                      <!-- <span class="page-text-18">[ Загружено, 455kb ]</span> -->
+                    </div>
+                    <div class="mymodal__file-clear">
+                      <svg width="15" height="15">
+                        <use xlink:href="#icon-close"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="mymodal__form-bottom">
+                <button class="mymodal__submit page-btn-black">Отправить</button>
+                <span class="mymodal__terms page-text-18">Нажимая кнопку, я даю согласиена обработку <a href="">персональных данных</a></span>
+              </div>
+            </form>
+          </div>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
     <div class="modal modal--preload   modal--fit-content   modal--no-scale   modal--some-mod " data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
+          <div class="mymodal-wrapper">
+            <div class="mymodal__headline">
+              <span class="mymodal__header">Заявка принята</span>
+              <p class="mymodal__text page-text-24">
+                Андрей, спасибо за обращение!
+                Ваша заявка принята, в ближайшее время наш менеджер свяжется с вами.
+              </p>
+            </div>
+          </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="#icon-close"></use>
