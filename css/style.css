@@ -1387,6 +1387,11 @@ button,
   width: 100%;
 }
 
+[data-modal=success] .modal__content {
+  max-width: 600px;
+  width: 100%;
+}
+
 .mymodal__from-label {
   position: relative;
 }
